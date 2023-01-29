@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/splashScreenFragment">
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="suvorov.openweather.presentation.ui.splash.SplashScreenFragment"
+        android:label="SplashScreenFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashScreenFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="suvorov.openweather.presentation.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_currentWeatherFragment"
+            app:destination="@id/currentWeatherFragment"/>
+        <action
+            android:id="@+id/action_homeFragment_to_forecastFragment"
+            app:destination="@id/forecastFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/currentWeatherFragment"
+        android:name="suvorov.openweather.presentation.ui.current.CurrentWeatherFragment"
+        android:label="CurrentWeatherFragment"
+        tools:layout="@layout/fragment_current">
+        <argument
+            android:name="currentWeather"
+            app:argType="suvorov.openweather.domain.model.CurrentWeather"/>
+    </fragment>
+    <fragment
+        android:id="@+id/forecastFragment"
+        android:name="suvorov.openweather.presentation.ui.forecast.ForecastFragment"
+        android:label="ForecastFragment"
+        tools:layout="@layout/fragment_forecast">
+        <argument
+            android:name="id"
+            app:argType="integer"/>
+        <argument
+            android:name="name"
+            app:argType="string"/>
+    </fragment>
+</navigation>

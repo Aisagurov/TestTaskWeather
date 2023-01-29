@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">OpenWeather</string>
+    <string name="current_weather">Текущий прогноз погоды</string>
+    <string name="daily_forecast">Ежедневный прогноз</string>
+    <string name="temp">температура</string>
+    <string name="feels_like">ощущается как</string>
+    <string name="humidity">влажность</string>
+    <string name="wind">ветер</string>
+    <string name="pressure">давление</string>
+    <string name="sunrise">рассвет</string>
+    <string name="sunset">закат</string>
+    <string name="visibility">видимость</string>
+    <string name="degree_celsius">°C</string>
+    <string name="percent">%</string>
+    <string name="meters_per_second">м/с</string>
+    <string name="km">км</string>
+    <string name="millimeters_of_mercury_post">мм.рт.ст</string>
+    <string name="slash">/</string>
+    <string name="data_loading_error">При загрузке данных произошла ошибка. Пожалуйста, попробуйте ещё раз</string>
+    <string name="unable_to_connect_to_server">Не удается подключиться к серверу</string>
+    <string name="link_timeout">Время ожидания истекло</string>
+    <string name="link_failed">Соединение прервано</string>
+    <string name="link_closed">Соединение закрыто</string>
+</resources>
